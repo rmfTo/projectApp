@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>URI ribrary</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="clear">
+    <div class="util clear">
+        <ul>
+            <li><a href="./login/index.html">로그인</a></li>
+            <li><a href="./login/signin/index.html">회원가입</a></li>
+            <li><a href="./customer/csc.html">고객센터</a></li>
+            <li><a href="./customer/sli.html">장바구니</a></li>
+            <li><a href="./customer/sli.html">마이페이지 <img src="./images/drop_arrow_w.png" alt=""/></a></li>
+        </ul>
+    </div>
+    <div class="wrap clear h_etc">
+        <a href="index.html" class="logo"><h1><img src="./images/logo.png" alt="logo"/></h1></a>
+        <div class="h_m"><a href="./menu/index.html"><span></span><span></span><span></span></a></div>
+        <form class="search">
+            <select name="s_type">
+                <option value="all">전체</option>
+                <option value="title">제목</option>
+                <option value="author">저자</option>
+            </select>
+            <input type="text"/>
+            <input type="submit" value="" name="s_sum"/><img src="./images/search.png" alt=""/>
+        </form>
+        <div class="event"><a href="./event/1/index.html"><img src="./images/e_b.jpg" alt=""></a></div>
+    </div>
+    <ul class="gnb">
+        <li><a href="#">이 달의 추천 도서</a></li>
+        <li>카테고리
+            <ul class="submenuu cat">
+            <li><a href="#">총류</a><ul class="d3">
+                <li><a href="#">도서학,서지학</a></li>
+                <li><a href="#">문헌정보학</a></li>
+                <li><a href="#">백과사전</a></li>
+                <li><a href="#">강연집,수필집,연설문집</a></li>
+                <li><a href="#">일반연속간행물</a></li>
+                <li><a href="#">일반학회,단체,협회,기관</a></li>
+                <li><a href="#">신문,언론,저널리즘</a></li>
+                <li><a href="#">일반전집,총서</a></li>
+                <li><a href="#">향토자료</a></li>
+            </ul></li>
+            <li><a href="#">철학</a><ul class="d3">
+                <li><a href="#">형이상학</a></li>
+                <li><a href="#">인식론,인과론,인간학</a></li>
+                <li><a href="#">철학의 체계</a></li>
+                <li><a href="#">경학</a></li>
+                <li><a href="#">동양철학,사상</a></li>
+                <li><a href="#">서양철학</a></li>
+                <li><a href="#">논리학</a></li>
+                <li><a href="#">심리학</a></li>
+                <li><a href="#">윤리학,도덕철학</a></li>
+            </ul></li>
+            <li><a href="#">종교</a><ul class="d3">
+                <li><a href="#">비교종교</a></li>
+                <li><a href="#">불교</a></li>
+                <li><a href="#">기독교</a></li>
+                <li><a href="#">도교</a></li>
+                <li><a href="#">천도교</a></li>
+                <li><a href="#">신도</a></li>
+                <li><a href="#">힌두교,브라만교</a></li>
+                <li><a href="#">이슬람교(회교)</a></li>
+                <li><a href="#">기타 제종교</a></li>
+            </ul></li>
+            <li><a href="#">사회과학</a><ul class="d3">
+                <li><a href="#">통계학</a></li>
+                <li><a href="#">경제학</a></li>
+                <li><a href="#">사회학,사회문제</a></li>
+                <li><a href="#">정치학</a></li>
+                <li><a href="#">행정학</a></li>
+                <li><a href="#">법학</a></li>
+                <li><a href="#">교육학</a></li>
+                <li><a href="#">풍속,예절,민속학</a></li>
+                <li><a href="#">국방,군사학</a></li>
+            </ul></li>
+            <li><a href="#">자연과학</a><ul class="d3">
+                <li><a href="#">수학</a></li>
+                <li><a href="#">물리학</a></li>
+                <li><a href="#">화학</a></li>
+                <li><a href="#">천문학</a></li>
+                <li><a href="#">지학</a></li>
+                <li><a href="#">광물학</a></li>
+                <li><a href="#">생명과학</a></li>
+                <li><a href="#">식물학</a></li>
+                <li><a href="#">동물학</a></li>
+            </ul></li>
+            <li><a href="#">기술과학</a><ul class="d3">
+                <li><a href="#">의학</a></li>
+                <li><a href="#">농업,과학</a></li>
+                <li><a href="#">공학,공업일반,토목공학,환경공학</a></li>
+                <li><a href="#">건축공학</a></li>
+                <li><a href="#">기계공학</a></li>
+                <li><a href="#">전기공학</a></li>
+                <li><a href="#">화학공학</a></li>
+                <li><a href="#">제조업</a></li>
+                <li><a href="#">생활과학</a></li>
+            </ul></li>
+            <li><a href="#">예술</a><ul class="d3">
+                <li><a href="#">건축물</a></li>
+                <li><a href="#">조각,조형예술</a></li>
+                <li><a href="#">공예,장식예술</a></li>
+                <li><a href="#">서예</a></li>
+                <li><a href="#">회화,도화</a></li>
+                <li><a href="#">사진예술</a></li>
+                <li><a href="#">음악</a></li>
+                <li><a href="#">공연예술,매체예술</a></li>
+                <li><a href="#">오락,스포츠</a></li>
+            </ul></li>
+            <li><a href="#">언어</a><ul class="d3">
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">중국어</a></li>
+                <li><a href="#">일본어,기타아시아제어</a></li>
+                <li><a href="#">영어</a></li>
+                <li><a href="#">독일어</a></li>
+                <li><a href="#">프랑스어</a></li>
+                <li><a href="#">스페인어,포르투갈어</a></li>
+                <li><a href="#">이탈리아어</a></li>
+                <li><a href="#">기타제어</a></li>
+            </ul></li>
+            <li><a href="#">문학</a><ul class="d3">
+                <li><a href="#">한국문학</a></li>
+                <li><a href="#">중국문학</a></li>
+                <li><a href="#">일본문학,기타아시아문학</a></li>
+                <li><a href="#">영미문학</a></li>
+                <li><a href="#">독일문학</a></li>
+                <li><a href="#">프랑스문학</a></li>
+                <li><a href="#">스페인,포르투갈문학</a></li>
+                <li><a href="#">이탈리아문학</a></li>
+                <li><a href="#">기타제문학</a></li>
+            </ul></li>
+            <li><a href="#">역사</a><ul class="d3">
+                <li><a href="#">아시아</a></li>
+                <li><a href="#">유럽</a></li>
+                <li><a href="#">아프리카</a></li>
+                <li><a href="#">북아메리카</a></li>
+                <li><a href="#">남아메리카</a></li>
+                <li><a href="#">오세아니아</a></li>
+                <li><a href="#">양극지방</a></li>
+                <li><a href="#">지리</a></li>
+                <li><a href="#">전기</a></li>
+            </ul></li>
+        </ul></li>
+        <li><a href="#">베스트 셀러</a></li>
+        <li><a href="#">새로 나온 책</a></li>
+        <li>이벤트<ul class="submenuu">
+            <li><a href="#">종료된 이벤트</a></li>
+            <li><a href="#">진행중인 이벤트</a></li>
+            <li><a href="#">진행예정 이벤트</a></li>
+        </ul></li>
+        <li><a href="#">서적기부</a></li>
+        <li><a href="#">당신만을 위학 책 추천</a></li>
+    </ul>
+</header>
+<section id="h_bnr">
+    <h2>메인 베너</h2>
+    <ul class="h_b">
+        <li class="top"><a href="./event/1"><img src="./images/m_b.jpg" alt=""/></a></li>
+        <li><a href="./event/1"><img src="./images/m_b2.jpg" alt=""/></a></li>
+        <li><a href="./event/1"><img src="./images/m_b3.jpg" alt=""/></a></li>
+    </ul>
+</section>
+<section id="b_s" class="wrap">
+    <h2>베스트 셀러</h2>
+    <div id="prev"></div>
+    <div class="slideWrap">
+        <ul class="slide">
+            <li><a href="">
+                <img src="./images/b_s1.jpg" alt=""/>
+                <h3>그리움은 아무에게나 생기지 않습니다</h3>
+                <p>박근혜</p>
+                <p>2021-12-30</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/b_s2.jpg" alt=""/>
+                <h3>거꾸로 읽는 세계사</h3>
+                <p>유시민</p>
+                <p>2021-10-29</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/b_s3.jpg" alt=""/>
+                <h3>불편한 편의점</h3>
+                <p>김호연</p>
+                <p>2021-04-20</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/b_s4.jpg" alt=""/>
+                <h3>물고기는 존재하지 않는다</h3>
+                <p>룰루 밀러</p>
+                <p>2021-12-17</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/b_s5.jpg" alt=""/>
+                <h3>윤석열 X파일</h3>
+                <p>열린공감TV</p>
+                <p>2022.02.04</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/b_s6.jpg" alt=""/>
+                <h3>이상한 과자 가게 전천당 13</h3>
+                <p>히로시마 레이코</p>
+                <p>2022.01.24</p>
+            </a></li>
+        </ul>
+    </div>
+    <div id="next"></div>
+</section>
+<hr class="hr"/>
+<section id="series">
+    <h2>시리즈</h2>
+    <div>
+        <ul>
+            <li><a href="">
+                <img src="./images/s1.jpg" alt=""/>
+                <h3>지박소년 하나코군<br/>1~16권</h3>
+                <p>아이다이로</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/s2.jpg" alt=""/>
+                <h3>그 해 우리는<br/>1권,2권</h3>
+                <p>이나은</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/s3.jpg" alt=""/>
+                <h3>설민석의 한국사<br/>대모험 1~19권</h3>
+                <p>설민석</p>
+            </a></li>
+        </ul>
+    </div>
+</section>
+<section id="product">
+    <h2>독서용품</h2>
+    <p>당신의 독서를 도와줄 독서 필수품</p>
+    <div>
+        <ul>
+            <li><a href="">
+                <img src="./images/p1.jpg" alt=""/>
+                <h3>드니 동양풍 책갈피</h3>
+                <p>9,900원</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/p2.jpg" alt=""/>
+                <h3>북라이트</h3>
+                <p>5,800원</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/p3.jpg" alt=""/>
+                <h3>독서도우미</h3>
+                <p>2,970원</p>
+            </a></li>
+            <li><a href="">
+                <img src="./images/p4.jpg" alt=""/>
+                <h3>에코 프랜드 독서대</h3>
+                <p>9,900원</p>
+            </a></li>
+        </ul>
+    </div>
+</section>
+<section id="suggestion" class="wrap">
+    <h2>URI가 추천하는 작가</h2>
+    <div>
+            <img src="./images/w_f.jpg" alt=""/>
+            <h3>베르나르 베르베르</h3>
+            <p>~1961</p>
+            <ul>
+                <li><a href="./categories/860/1355/index.html">개미(총 5권)</a></li>
+                <li><a href="./categories/860/1360/index.html">상대적이며 절대적인 백과사전</a></li>
+                <li><a href="./categories/860/1361/index.html">타나토스(총 2권)</a></li>
+                <li><a href="./categories/860/1363/index.html">천사들의 제국(총 2권)</a></li>
+                <li><a href="./categories/860/1365/index.html">신(총 6권)</a></li>
+                <li><a href="./categories/860/1371/index.html">여행의 책</a></li>
+                <li><a href="./categories/860/1373/index.html">아버지들의 아버지(총 2권)</a></li>
+                <li><a href="./categories/860/1375/index.html">뇌(총 2권)</a></li>
+                <li><a href="./categories/860/1377/index.html">웃음(총 2권)</a></li>
+            </ul><ul>
+                <li><a href="./categories/860/1379/index.html">나무</a></li>
+                <li><a href="./categories/860/1380/index.html">인간</a></li>
+                <li><a href="./categories/860/1381/index.html">파피용</a></li>
+                <li><a href="./categories/860/1382/index.html">파라다이스(총 2권)</a></li>
+                <li><a href="./categories/860/1384/index.html">카산드라의 겨울(총 2권)</a></li>
+                <li><a href="./categories/860/1386/index.html">제 3인류(총 6권)</a></li>
+                <li><a href="./categories/860/1392/index.html">잠</a></li>
+                <li><a href="./categories/860/1393/index.html">고양이</a></li>
+                <li><a href="./categories/860/1394/index.html">죽음</a></li>
+            </ul>
+    </div>
+</section>
+<footer>
+    <ul>
+        <li><a href="./terms/index.html">이용약관</a></li>
+        <li><a href="./privacy_policy/index.html">개인정보 처리 방침</a></li>
+        <li><a href="./publisher_supplier_guide/index.html">출판사/공급사 안내</a></li>
+        <li><a href="./library_location_and_opening_hours/index.html">도서관 위치 및 개장시간</a></li>
+    </ul>
+    <address>도서관 본관 : 인천광역시 을지구 갑충대로 12번길 37 우리 도서관 <span>약도</span><br/>고객센터 : 인천광역시 을지구 갑충대로 12번길 39 sst빌딩 702호, Fax 02-6926-2600<br/>대표이사 : 김철수 &nbsp;&nbsp; 개인정보 보호 책임자 : 이영희</address>
+    <p>&copy;2022 all right reserved</p>
+    <a href="https://www.mcst.go.kr/kor/main.jsp"><img src="./images/문화체육관광부.jpg" alt=""></a>
+</footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
